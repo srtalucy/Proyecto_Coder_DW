@@ -1,0 +1,50 @@
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin border($style, $radius, $color) {
+  border-style: $style;
+  border-radius: $radius;
+  border-color: $color;
+}
+header {
+  div {
+    div {
+      img {
+        @include sizes(100px, 100px);
+        @include border(outset, 10em, black);
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      div {
+        ul {
+          li {
+            button {
+              @include border(unset, 0.5em, none);
+              background-color: map-get($estilos-boton, color);
+              font-weight: map-get($estilos-boton, tamaño);
+              padding: map-get($estilos-boton, padding);
+              margin-top: map-get($estilos-boton, margintop);
+              transition: transform 0.2s;
+
+              &:hover {
+                transform: scale(1.1);
+                background-color: #a2c8ec;
+              }
+              a {
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                  sans-serif;
+                margin-left: 1em;
+                margin-right: 1em;
+                text-shadow: 1px 2px 1px #a2c8ec;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin border($style, $radius, $color) {
+  border-style: $style;
+  border-radius: $radius;
+  border-color: $color;
+}
+
+.miembros {
+  @include sizes(10 * 20px, 200px);
+  @include border(none, 0.4em, none);
+  margin-top: 0.5em;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.imagenarmy {
+  @extend .miembros;
+  @include sizes(250px, 250px);
+  margin-top: 0;
+  transition: none;
+  &:hover {
+    transform: none;
+  }
+}
+.discografia {
+  @extend .miembros;
+  margin-top: 0.5em;
+}
+span {
+  background-color: #a2c8ec;
+}
+iframe {
+  @include sizes(50vw, 50vh);
+}
+.titulo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  animation: flipInY;
+  animation-duration: 1.5s;
+}
+
+
