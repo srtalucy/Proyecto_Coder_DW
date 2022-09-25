@@ -35,7 +35,8 @@ header div div div ul li button {
   border-radius: 0.4em;
   border-color: none;
   margin-top: 0.5em;
-  transition: transform 0.2s; }
+  transition: transform 0.2s;
+  margin-bottom: 0.7em; }
   .miembros:hover, .imagenarmy:hover, .discografia:hover {
     transform: scale(1.1); }
 
