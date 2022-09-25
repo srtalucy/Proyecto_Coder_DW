@@ -56,7 +56,8 @@ span {
 
 iframe {
   width: 50vw;
-  height: 50vh; }
+  height: 50vh;
+  margin-bottom: 0.7em; }
 
 .titulo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
@@ -83,3 +84,8 @@ body {
 
 html {
   height: 100%; }
+
+@media (max-width: 768px) {
+  iframe {
+    width: 50vw;
+    height: 25vh; } }

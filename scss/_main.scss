@@ -36,6 +36,7 @@ span {
 }
 iframe {
   @include sizes(50vw, 50vh);
+  margin-bottom: 0.7em;
 }
 .titulo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
