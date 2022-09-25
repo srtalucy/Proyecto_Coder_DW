@@ -9,7 +9,7 @@
 }
 
 .miembros {
-  @include sizes(10 * 20px, 200px);
+  @include sizes(10 * 30px, 300px);
   @include border(none, 0.4em, none);
   margin-top: 0.5em;
   transition: transform 0.2s;
