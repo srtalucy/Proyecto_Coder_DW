@@ -8,11 +8,12 @@
   border-color: $color;
 }
 header {
+  border-bottom: 1px solid whitesmoke;
   div {
     div {
       img {
         @include sizes(100px, 100px);
-        @include border(outset, 10em, black);
+
         margin-top: 0.5em;
         margin-bottom: 0.5em;
       }
